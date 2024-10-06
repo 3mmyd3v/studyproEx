@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Oduola Ayobami Andrew">
+    <meta name="desciption" content="App to help with the exam">
+    <title>Course Detail</title>
+
+    <style>
+        table, th, td{
+            border: 1px solid;
+            
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="{% url 'study-tracker:home-page' %}">Home</a>
+
+    <h1>Welcome to <em>{{course}} course page</em></h1>
+    <h3>A low time project just to help you get through this Exam period</h3>
+    <div class="">
+        <div class="bar">
+            {% comment %} <button><a href="{% url 'study-tracker:new-course' %}">Add Course</a></button> {% endcomment %}
+            <button><a href="{% url 'study-tracker:new-topic' %}"> Add New Topic </a></button>
+            <button>Record Study Session</button>
+        </div>
+        <br>
+        <div class="due-course">
+            <table>
+                <tr>
+                    <th>Topic</th>
+                    <th>Course</th>
+                    <th>Due date</th>
+                    <th>Last read</th>
+                    <th>Precentage</th>
+                </tr>
+                {% for topic in topics %}
+                <tr>
+                    <td>{{ topic.title }}</td>
+                    <td>{{ topic.course }}</td>
+                    <td>{{ topic.next_review }}</td>
+                    <td>{{ topic.last_read }}</td>
+                    <td>{{ topic.performance }}%</td>
+                </tr>
+                {% endfor %}
+            </table>
+    
+    </div>
+</body>
+</html>

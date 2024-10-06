@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Oduola Ayobami Andrew">
+    <meta name="desciption" content="App to help with the exam">
+    <title>Study Ex Help</title>
+    <link rel="stylesheet" href="/Style/style.css">
+
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to <em>StudyPro</em></h1>
+        <img src="/assets/studypr.webp" alt="" width="350px" />
+        <p>A low time project just to help you get through this exam period</p>
+    </div>
+    <div class="navlinks">
+        <div class="links">
+            <a href="add_course.html">Add Course</a>
+            <a href="add_topic.html"> Add New Topic </a>
+            <!-- <a href="{% url 'study-tracker:new-topic' %}"> Record Study Session </a> -->
+        </div>
+    </div>
+
+    <div class="">
+
+        <br>
+        <div class="due-course">
+            <h2>Due Topics</h2>
+            <table>
+                <tr>
+                    <th>Topic</th>
+                    <th>Course</th>
+                    <th>Due date</th>
+                    <th>Last read</th>
+                    <th>Precentage</th>
+                </tr>
+
+                <tr>
+                    <td>Introduction to Organic Chemistry</td>
+                    <td>CHE 102</td>
+                    <td>September 9, 2024</td>
+                    <td>September 9, 2024</td>
+                    <td>None</td>
+                </tr>
+
+                <tr>
+                    <td>Nomenclature in Organic Chemistry</td>
+                    <td>CHE 102</td>
+                    <td>September 9, 2024</td>
+                    <td>September 9, 2024</td>
+                    <td>None</td>
+                </tr>
+
+                <tr>
+                    <td>Magnetic Field</td>
+                    <td>PHY 102</td>
+                    <td>September 9, 2024</td>
+                    <td>September 9, 2024</td>
+                    <td>None</td>
+                </tr>
+
+                <tr>
+                    <td>Intro</td>
+                    <td>GNS 106</td>
+                    <td>September 9, 2024</td>
+                    <td>September 9, 2024</td>
+                    <td>0%
+                    <td>
+                </tr>
+
+                <tr>
+                    <td>Branches of Philosophy</td>
+                    <td>GNS 106</td>
+                    <td>September 9, 2024</td>
+                    <td>September 9, 2024</td>
+                    <td>0%
+                    <td>
+                </tr>
+
+
+
+
+            </table>
+        </div>
+        <div class="othertopics">
+
+
+
+            <h2>Other topics</h2>
+            <table>
+
+                <!-- {% if other_topics.count > 0 %} -->
+                <tr>
+                    <th>Topic</th>
+                    <th>Course</th>
+                    <th>Due date</th>
+                    <th>Last read</th>
+                    <th>Precentage</th>
+                </tr>
+                <!-- {% endif %}
+                {% for topic in other_topics %} -->
+
+
+                <tr>
+                    <td>Methods of Philosophy</td>
+                    <td>GNS 106</td>
+                    <td>September 9, 2024</td>
+                    <td>September 9, 2024</td>
+                    <td>0%
+                    <td>
+                </tr>
+
+
+
+            </table>
+        </div>
+
+        <div class="AllCourses">
+            <h2>All Courses</h2>
+
+            <div class="topics">
+                <a href="">CHE 102</a>
+                <p>Add Topic</p>
+            </div>
+
+            <div class="topics">
+                <a href="">PHY 102</a>
+                <p>Add Topic</p>
+            </div>
+            <div class="topics">
+                <a href="">MTS 102</a>
+                <p>Add Topic</p>
+            </div>
+            <div class="topics">
+                <a href="">GNS 102</a>
+                <p>Add Topic</p>
+            </div>
+            <div class="topics">
+                <a href="">GNS 106</a>
+                <p>Add Topic</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
